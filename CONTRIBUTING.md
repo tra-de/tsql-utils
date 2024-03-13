@@ -33,7 +33,7 @@ For the time being, we need to explicitly reimplement sqlserver__ macros as syna
 
 ```
 {% macro synapse__get_tables_by_pattern_sql(field) %}
-    {% do return( tsql_utils.sqlserver__get_tables_by_pattern_sql(schema_pattern, table_pattern, exclude='', database=target.database)) %}
+    {% do return( tsql_utils.synapse__get_tables_by_pattern_sql(schema_pattern, table_pattern, exclude='', database=target.database)) %}
 {% endmacro %}
 ```
 

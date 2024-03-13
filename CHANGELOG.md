@@ -41,7 +41,7 @@ This pacakge will work best with dbt-sqlserver and dbtsynapse versions 0.21.0 an
 ## `v0.8.0`
 
 * make compatible with dbt-core v0.20.0 [#59](https://github.com/dbt-msft/tsql-utils/pull/59) [#52](https://github.com/dbt-msft/tsql-utils/pull/52)
-* added macros `sqlserver__drop_schema_by_name`, `sqlserver__drop_schemas_by_prefixes`, and `sqlserver__drop_old_relations` to help manage out of date and unused schemas by @timdenouden in <https://github.com/dbt-msft/tsql-utils/pull/58>
+* added macros `synapse__drop_schema_by_name`, `synapse__drop_schemas_by_prefixes`, and `synapse__drop_old_relations` to help manage out of date and unused schemas by @timdenouden in <https://github.com/dbt-msft/tsql-utils/pull/58>
 
 ## `v0.7.2`
 
