@@ -1,4 +1,4 @@
-{% macro sqlserver__generate_series(upper_bound) %}
+{% macro synapse__generate_series(upper_bound) %}
 
     {% set n = dbt_utils.get_powers_of_two(upper_bound) %}
 

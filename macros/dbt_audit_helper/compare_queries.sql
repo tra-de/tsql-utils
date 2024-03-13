@@ -1,4 +1,4 @@
-{% macro sqlserver__compare_queries(a_query, b_query, primary_key=None, summarize=true) %}
+{% macro synapse__compare_queries(a_query, b_query, primary_key=None, summarize=true) %}
 
 with a as (
 

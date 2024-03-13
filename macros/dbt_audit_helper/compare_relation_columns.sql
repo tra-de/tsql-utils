@@ -1,4 +1,4 @@
-{% macro sqlserver__compare_relation_columns(a_relation, b_relation) %}
+{% macro synapse__compare_relation_columns(a_relation, b_relation) %}
 
 with a_cols as (
     {{ tsql_utils.sqlserver__get_columns_in_relation_sql(a_relation) }}
@@ -22,7 +22,7 @@ full outer join b_cols using (column_name)
 {% endmacro %}
 
 
-{% macro sqlserver__get_columns_in_relation_sql(relation) %}
+{% macro synapse__get_columns_in_relation_sql(relation) %}
   SELECT
             column_name,
             data_type,

@@ -1,4 +1,4 @@
-{% macro sqlserver__date_spine_sql(datepart, start_date, end_date) %}
+{% macro synapse__date_spine_sql(datepart, start_date, end_date) %}
 
 
     with
@@ -86,7 +86,7 @@
 {% endmacro %}
 
 
-{% macro sqlserver__date_spine(datepart, start_date, end_date) -%}
+{% macro synapse__date_spine(datepart, start_date, end_date) -%}
 
     {% set date_spine_query %}
 

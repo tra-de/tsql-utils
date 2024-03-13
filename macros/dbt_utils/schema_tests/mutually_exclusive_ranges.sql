@@ -1,4 +1,4 @@
-{% macro sqlserver__test_mutually_exclusive_ranges(model, lower_bound_column, upper_bound_column, partition_by=None, gaps='allowed', zero_length_range_allowed=False) %}
+{% macro synapse__test_mutually_exclusive_ranges(model, lower_bound_column, upper_bound_column, partition_by=None, gaps='allowed', zero_length_range_allowed=False) %}
 
 {% if gaps == 'not_allowed' %}
     {% set allow_gaps_operator='=' %}
@@ -73,7 +73,7 @@ calc as (
         coalesce(
             upper_bound {{ allow_gaps_operator }} next_lower_bound,
             is_last_record,
-            false
+            1
         ) as upper_bound_{{ allow_gaps_operator_in_words }}_next_lower_bound
 
     from window_functions

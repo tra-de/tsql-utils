@@ -1,4 +1,4 @@
-{% macro sqlserver__log_natural(x) %}
+{% macro synapse__log_natural(x) %}
 
     log({{ x }})
 
