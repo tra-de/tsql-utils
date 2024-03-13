@@ -20,6 +20,6 @@ select
 from {{ b_relation }}
 {% endset %}
 
-{{ tsql_utils.sqlserver__compare_queries(a_query, b_query, primary_key, summarize) }}
+{{ tsql_utils.synapse__compare_queries(a_query, b_query, primary_key, summarize) }}
 
 {% endmacro %}
